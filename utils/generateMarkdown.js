@@ -24,6 +24,7 @@ function generateMarkdown(data) {
 
 
 ${renderLicenseBadge(data.license)}
+
 `;
 }
 

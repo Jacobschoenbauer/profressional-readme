@@ -53,7 +53,7 @@ const questions = [
   },
   {
     type: "checkbox",
-    name: "licensing",
+    name: "license",
     message: "Choose a license",
     choices: [
       "Apache",
