@@ -23,6 +23,11 @@ inquirer
 const questions = [
   {
     type: "input",
+    message: "Title",
+    name: "title",
+  },
+  {
+    type: "input",
     message: "Description",
     name: "description",
   },
@@ -38,8 +43,8 @@ const questions = [
   },
   {
     type: "input",
-    message: "Contributing,",
-    name: "cotributing",
+    message: "Contributers",
+    name: "contributers",
   },
   {
     type: "input",
