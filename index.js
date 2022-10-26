@@ -19,7 +19,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
 // TODO: Create an array of questions for user input
-inquirer
+inquirer;
 const questions = [
   {
     type: "input",
@@ -50,6 +50,25 @@ const questions = [
     type: "input",
     message: "tests",
     name: "tests",
+  },
+  {
+    type: "checkbox",
+    name: "licensing",
+    message: "Choose a license",
+    choices: [
+      "Apache",
+      "MIT",
+      "Mozilla-Public",
+      "None",
+    ],
+    validate: (liceInput) => {
+      if (liceInput) {
+        return true;
+      } else {
+        console.log("please choose a liscense");
+        return false;
+      }
+    },
   },
 ];
 
