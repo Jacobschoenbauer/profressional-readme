@@ -48,19 +48,19 @@ const questions = [
   },
   {
     type: "input",
-    message: "tests",
-    name: "tests",
+    message: "URL",
+    name: "url",
+  },
+  {
+    type: "input",
+    message: "Picture",
+    name: "picture",
   },
   {
     type: "checkbox",
     name: "license",
     message: "Choose a license",
-    choices: [
-      "Apache",
-      "MIT",
-      "Mozilla-Public",
-      "None",
-    ],
+    choices: ["Apache", "MIT", "Mozilla-Public", "None"],
     validate: (liceInput) => {
       if (liceInput) {
         return true;
