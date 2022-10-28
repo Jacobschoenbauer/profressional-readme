@@ -38,8 +38,8 @@ const questions = [
   },
   {
     type: "input",
-    message: "Usage",
-    name: "usage",
+    message: "Tests",
+    name: "test",
   },
   {
     type: "input",
@@ -48,13 +48,18 @@ const questions = [
   },
   {
     type: "input",
-    message: "URL",
-    name: "url",
+    message: "Email",
+    name: "email",
   },
   {
     type: "input",
     message: "Picture",
     name: "picture",
+  },
+  {
+    type: "input",
+    message: "GitHub URL",
+    name: "github",
   },
   {
     type: "checkbox",

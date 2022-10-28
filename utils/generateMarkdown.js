@@ -56,8 +56,8 @@ function generateMarkdown(data) {
   ## Description 
   ${data.description}
   
-  ## Usage 
-  ${data.usage}
+  ## Test 
+  ${data.test}
   
   ## Testing 
   ${data.tests}
@@ -65,9 +65,13 @@ function generateMarkdown(data) {
   ## Contributers 
   ${data.contributers}
   
-  ## URL 
-  ${data.url}
- 
+  ## Questions
+  If you have questions email me
+  ${data.email}
+
+  ## Git Hub URL
+ ${data.github}
+
   ## Picture 
   ${data.picture}
  
