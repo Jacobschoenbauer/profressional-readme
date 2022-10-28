@@ -65,7 +65,7 @@ const questions = [
       if (liceInput) {
         return true;
       } else {
-        console.log("please choose a liscense");
+        console.log("please choose a license");
         return false;
       }
     },
