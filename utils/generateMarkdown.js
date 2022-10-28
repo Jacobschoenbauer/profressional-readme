@@ -1,10 +1,9 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license === "MIT") {
-    return `Not working`;
-  } else {
-    return "https://img.shields.io/badge/icq_new-black?style=for-the-badge&logo=icq&logolColor=42F425";
+  switch (license) {
+    case "MIT":
+      return "The coolest badge ever made";
   }
 }
 
@@ -19,12 +18,18 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  ## Description /n${data.description}
-  ## Usage ${data.usage}
-  ## Testing ${data.tests}
-  ## Contributers ${data.contributers}
-  ## URL ${data.url}
-  ## Picture ${data.picture}
+  ## Description 
+  ${data.description}
+  ## Usage 
+  ${data.usage}
+  ## Testing 
+  ${data.tests}
+  ## Contributers 
+  ${data.contributers}
+  ## URL 
+  ${data.url}
+  ## Picture 
+  ${data.picture}
 
 
 ${renderLicenseBadge(data.license)}
