@@ -65,8 +65,8 @@ function generateMarkdown(data) {
   ${data.url}
   ## Picture 
   ${data.picture}
-
-
+  ##License
+  ${data.license}
 
   ${renderLicenseBadge(data.license)}
   ${renderLicenseLink(data.license)}
