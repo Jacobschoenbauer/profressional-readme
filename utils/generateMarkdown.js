@@ -2,9 +2,9 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === "MIT") {
-    return `https://img.shields.io/badge/icq_new-black?style=for-the-badge&logo=icq&logolColor=42F425`;
+    return `Not working`;
   } else {
-    return "No license";
+    return "https://img.shields.io/badge/icq_new-black?style=for-the-badge&logo=icq&logolColor=42F425";
   }
 }
 
