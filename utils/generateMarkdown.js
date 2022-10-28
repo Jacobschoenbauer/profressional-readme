@@ -1,16 +1,26 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  switch (license) {
+  if (license === "MIT") {
+    return "Greatest Badge ever";
+  } else if (license === "Apache") {
+    return "Another amazing badge";
+  } else if (license === "Mozilla-Public") return "Yes another amazing badge";
+  else license === "None";
+  return "nothing please";
+
+  /* switch (license) {
     case "MIT":
       return "The coolest badge ever made";
-  case "Apache":
-    return "The coolest badge ever made";
+    case "Apache":
+      return "The coolest badge ever made";
     case "Mozilla-Public":
       return "The coolest badge ever made";
-      case "None":
-        return "No license needed";
-}
+    case "None":
+      return "No license needed";
+    default:
+      return "";
+  }*/
 }
 
 // TODO: Create a function that returns the license link
