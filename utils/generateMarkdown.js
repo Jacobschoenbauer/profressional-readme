@@ -4,7 +4,13 @@ function renderLicenseBadge(license) {
   switch (license) {
     case "MIT":
       return "The coolest badge ever made";
-  }
+  case "Apache":
+    return "The coolest badge ever made";
+    case "Mozilla-Public":
+      return "The coolest badge ever made";
+      case "None":
+        return "No license needed";
+}
 }
 
 // TODO: Create a function that returns the license link
