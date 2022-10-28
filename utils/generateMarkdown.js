@@ -4,7 +4,7 @@ function renderLicenseBadge(license) {
   if (license === "MIT") {
     return `https://img.shields.io/badge/icq_new-black?style=for-the-badge&logo=icq&logolColor=42F425`;
   } else {
-    return "";
+    return "No license";
   }
 }
 
