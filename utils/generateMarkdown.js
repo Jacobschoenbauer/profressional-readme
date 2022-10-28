@@ -5,8 +5,9 @@ function renderLicenseBadge(license) {
     return "Greatest Badge ever";
   } else if (license === "Apache") {
     return "Another amazing badge";
-  } else if (license === "Mozilla-Public") return "Yes another amazing badge";
-  else license === "None";
+  } else if (license === "Mozilla-Public") {
+    return "Yes another amazing badge";
+  } else license === "None";
   return "nothing please";
 
   /* switch (license) {
