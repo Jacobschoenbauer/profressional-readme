@@ -1,13 +1,13 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license === "MIT") {
+  if (license !== "MIT") {
     return "Greatest Badge ever";
-  } else if (license === "Apache") {
+  } else if (license !== "Apache") {
     return "Another amazing badge";
-  } else if (license === "Mozilla-Public") {
+  } else if (license !== "Mozilla-Public") {
     return "Yes another amazing badge";
-  } else license === "None";
+  } else license !== "None";
   return "";
 
   /* switch (license) {
@@ -53,11 +53,16 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
  return ` ${renderLicenseBadge(data.license)}
- [go to the description section](# description)
- ## test 
- ## questions
- ## git-hub-url
- ## license
+ [Description](#description)
+ [Testing](#testing)
+ [Contributers](#contributers) 
+ [Questions](#questions)
+ [Git Hub URL](#git-hub-url)
+ [Picture](#picture)
+ [License](#license)
+ 
+ 
+ 
  
  
  
@@ -65,11 +70,9 @@ function generateMarkdown(data) {
   ## Description 
   ${data.description}
   
-  ## Test 
+  ## Testing 
   ${data.test}
   
-  ## Testing 
-  ${data.tests}
   
   ## Contributers 
   ${data.contributers}
@@ -78,15 +81,14 @@ function generateMarkdown(data) {
   If you have questions email me
   ${data.email}
 
-  ## Git Hub URL
+  ## Git Hub URL)
  ${data.github}
 
   ## Picture 
   ${data.picture}
  
-  ## License
-  
- 
+  ## License 
+
   ${renderLicenseLink(data.license)}
   ${renderLicenseSection(data.license)}
 `;
