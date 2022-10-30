@@ -2,11 +2,11 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "MIT") {
-    return "![badge](https://img.shields.io/badge/-MIT-61DAFB?logo=react&logoColor=white&logoWidth=30)";
+    return "![badge](https://img.shields.io/badge/-MIT-61DAFB?&logoColor=white&logoWidth=30)";
   } else if (license !== "Apache") {
-    return "![badge](https://img.shields.io/badge/-Apache-61DAFB?logo=react&logoColor=white&logoWidth=30)";
+    return "![badge](https://img.shields.io/badge/-Apache-61DAFB?&logoColor=white&logoWidth=30)";
   } else if (license !== "Mozilla-Public") {
-    return "![badge](https://img.shields.io/badge/-Mozilla-Public-61DAFB?logo=react&logoColor=white&logoWidth=30)";
+    return "![badge](https://img.shields.io/badge/-Mozilla-Public-61DAFB?&logoColor=white&logoWidth=30)";
   } else license !== "None";
   return "";
 
@@ -52,7 +52,8 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return ` ${renderLicenseBadge(data.license)}
+  return ` ${renderLicenseBadge(data.license)}  
+
  [Description](#description)  
 
  [Testing](#testing)  
