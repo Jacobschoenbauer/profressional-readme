@@ -41,13 +41,13 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== "MIT") {
-    return "About Mit";
+    return "A short and simple permissive license with conditions only requiring preservation of copyright and license notices."
   } else if (license !== "Apache") {
-    return "About Apache";
+    return "Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative";
   } else if (license !== "Mozilla-Public") {
-    return "About Mozilla-Public";
+    return "";
   } else license !== "None";
-  return "";
+  return "This license does not grant trademark rights, meaning that users of MPL 2.0-licensed code cannot use the trademarks, names, logos, etc. of the original project or its contributors";
 }
 
 // TODO: Create a function to generate markdown for README
