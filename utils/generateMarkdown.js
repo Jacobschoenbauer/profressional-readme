@@ -45,9 +45,9 @@ function renderLicenseSection(license) {
   } else if (license !== "Apache") {
     return "Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative";
   } else if (license !== "Mozilla-Public") {
-    return "";
+    return "This license does not grant trademark rights, meaning that users of MPL 2.0-licensed code cannot use the trademarks, names, logos, etc. of the original project or its contributors";
   } else license !== "None";
-  return "This license does not grant trademark rights, meaning that users of MPL 2.0-licensed code cannot use the trademarks, names, logos, etc. of the original project or its contributors";
+  return "";
 }
 
 // TODO: Create a function to generate markdown for README
