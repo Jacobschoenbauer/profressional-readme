@@ -23,4 +23,4 @@ https://github.com/Jacobschoenbauer/profressional-readme
 ![img](Screenshot%202022-10-30%20094450.png)
 
 ## Video
-[label](Prof%20readme%20video.mp4)
+[Video](Prof%20readme%20video.mp4)
